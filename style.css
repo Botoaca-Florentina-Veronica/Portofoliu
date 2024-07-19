@@ -1,0 +1,150 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Martian Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(12, 12, 12);
+}
+
+/*  TRANSITION */
+a, .btn {
+    transition: all 300ms ease;
+}
+
+
+/* NAVIGATION BAR */
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+  
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: "Martian Mono", monospace;
+    margin-left: -200px;
+}
+
+.navbar-brand:hover{
+    cursor: default;
+}
+
+.nav-item{
+    margin-right: 55px;
+}
+
+.nav-link {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+.nav-link:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: gray;
+  }
+
+/* SECTIONS */
+
+section{
+    padding-top: 4vh;
+    height:96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display:flex;
+}
+
+/* PROFILE SECTION */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+    height:80vh;
+}
+
+.pic-container{
+    display: flex;
+    height: 400px;
+    width:400px;
+    margin-top: 10rem;
+
+}
+
+.text{
+    align-self: center;
+    text-align: center;
+}
+
+.text-p1 .text-p2{
+    font-weight: 600;
+}
+
+.text-p1{
+    text-align: center;
+}
+
+.text-p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon-linkedIn{
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+}
+
+.icon-GitHub{
+    cursor: pointer;
+    margin-top:10px;
+    height: 50px;
+    width: 50px;
+}
