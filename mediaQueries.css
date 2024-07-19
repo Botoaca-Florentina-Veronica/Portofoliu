@@ -1,0 +1,19 @@
+/* when the screen size is lower than 1200px, the desktop nav will disapear
+  and instead of the nav showing up, I want to see the hamburger menu*/
+/* HAMBURGER MENU */
+
+@media (max-width: 1200px) {
+    .navbar-nav {
+      display: none;
+    }
+  
+    .collapse.show .navbar-nav{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.5rem 0;
+    }
+}
