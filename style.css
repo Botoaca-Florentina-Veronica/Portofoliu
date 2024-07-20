@@ -222,12 +222,9 @@ section{
 /* ABOUT */
 
 .upt{
-    display: table-column;
     border-radius: 9%;
-    height: 400px;
-    width: 600px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    height: 450px;
+    width: 650px;
 }
 
 #about{
@@ -235,7 +232,6 @@ section{
 }
 
 .about-containers{
-    display: flex;
     gap:2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -258,5 +254,14 @@ section{
     border:rgb(53, 53, 53) 0.1rem solid;
     border-color:rgb(163, 163, 163);
     text-align: center;
-    margin-left: 200px;
+    width:450px;
+}
+
+.section-container{
+    gap:4rem;
+    height:80%;
+}
+
+.pic-container-upt{
+    margin:auto 0;
 }
