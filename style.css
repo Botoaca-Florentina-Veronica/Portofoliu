@@ -42,7 +42,7 @@ nav {
 }
 
 .navbar{
-    background-color: white;
+    background-color:white;
 }
 
 .navbar-brand{
@@ -173,6 +173,14 @@ section{
     width: 50px;
 }
 
+.checkmark-icon{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 /* BUTTONS */
 
 .btn-container{
@@ -223,7 +231,7 @@ section{
 
 .upt{
     border-radius: 9%;
-    height: 450px;
+    height: 500px;
     width: 650px;
 }
 
@@ -264,4 +272,45 @@ section{
 
 .pic-container-upt{
     margin:auto 0;
+}
+
+/* EXPERIENCE */
+
+#experience{
+    position: relative;
+}
+
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom:2rem;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 14rem;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+
+
+article .checkmark-icon{
+    cursor: default;
 }
