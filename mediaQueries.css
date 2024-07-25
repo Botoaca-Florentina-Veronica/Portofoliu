@@ -101,7 +101,15 @@
 
     #profile{
       height: 100vh;
-      margin-bottom: 0;
+      margin-bottom: 10rem;
+    }
+
+    .upt{
+      width:320px;
+      height: 290px;
+      margin: auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
     }
 
     article{
