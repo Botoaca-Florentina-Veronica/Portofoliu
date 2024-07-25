@@ -1,82 +1,131 @@
 /* when the screen size is lower than 1200px, the desktop nav will disapear
   and instead of the nav showing up, I want to see the hamburger menu*/
 
-@media screen and (max-width: 1400px){
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-
-  .about-containers {
-    flex-wrap: wrap;
-  }
-
-}
-
-  /* HAMBURGER MENU */
-@media screen and (max-width: 1200px) {
-    .navbar-nav {
-      display: none;
+  @media screen and (max-width: 1550px){
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
     }
   
-    .collapse.show .navbar-nav{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    .about-containers {
+      flex-wrap: wrap;
+    }
+
+    .navbar-brand{
+      margin-left: 0;
     }
   
-    .navbar-nav .nav-item {
-      margin: 0.5rem 0;
-    }
+  }
+  
+    /* HAMBURGER MENU */
+  @media screen and (max-width: 1200px) {
+      .navbar-nav {
+        display: none;
+      }
 
-
-    #experience, .experience-details-container{
-      margin-top: 2rem;
-    }
-
-    #profile, .section-container{
-      display: block;
-    }
-
-    .icon-arrow{
-      display:none;
-    }
-
-    section, .section-container{
-      height: fit-content;
-    }
-
-    section{
-      margin:0 5%;
-    }
-
-    .pic-container{
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-
+      .navbar-brand{
+        margin-left: 0;
+      }
+    
+      .collapse.show .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+      }
+  
+  
+      #experience, .experience-details-container{
+        margin-top: 2rem;
+      }
+  
+      #profile, .section-container{
+        display: block;
+      }
+  
+      .icon-arrow{
+        display:none;
+      }
+  
+      section, .section-container{
+        height: fit-content;
+      }
+  
+      section{
+        margin:0 5%;
+      }
+  
+      .pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+      }
+  
+      .upt{
+        width:340px;
+        height: 250px;
+        margin: 0 auto 2rem;
+        justify-content: center;
+        display: flex;
+      }
+  
+      .about-containers{
+        margin-top:0;
+      }
+  }
+  
+  
+  @media screen and (min-width: 600px) and (max-width: 1200px){
     .upt{
-      width:340px;
-      height: 250px;
+      width:550px;
+      height: 400px;
       margin: 0 auto 2rem;
       justify-content: center;
       display: flex;
     }
-
-    .about-containers{
-      margin-top:0;
-    }
-}
-
-
-@media screen and (min-width: 600px) and (max-width: 1200px){
-  .upt{
-    width:550px;
-    height: 400px;
-    margin: 0 auto 2rem;
-    justify-content: center;
-    display: flex;
+  
   }
 
-}
+
+  @media screen and (max-width:600px){
+    #contact{
+      height:80vh;
+    }
+
+    .navbar-brand{
+      margin-left: 0;
+    }
+
+    #profile{
+      height: 83vh;
+      margin-bottom: 0;
+    }
+
+    article{
+      font-size: 1rem;
+    }
+
+    .about-containers, .btn-container, .contact-info{
+      flex-wrap: wrap;
+    }
+
+    .contact-info-container{
+      margin:0;
+      padding: 10px;
+    }
+
+    .experience-sub-title{
+      font-size: 1.25rem;
+    }
+
+    .title{
+      font-size: 2rem;
+    }
+
+    .text-p2{
+      font-size: 1.25rem;
+    }
+  }
