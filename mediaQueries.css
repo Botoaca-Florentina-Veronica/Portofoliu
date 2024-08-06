@@ -92,8 +92,8 @@
 
   @media screen and (max-width:600px){
     #contact{
-      height:80vh;
-      margin-top: 20px;
+      height: 120vh;
+      margin-top: 15rem;
     }
 
     .navbar-brand{
@@ -106,13 +106,14 @@
     }
 
     #about{
-      height: 190vh;
-      margin-bottom: 7rem;
+      height: 170vh;
+      margin-top: 15rem;
     }
 
     #experience{
       height: 180vh;
-      margin-top: 30rem;
+      margin-top: 40rem;
+      margin-bottom: 0rem;
     }
 
     .upt{
