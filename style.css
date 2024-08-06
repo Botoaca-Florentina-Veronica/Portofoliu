@@ -311,7 +311,7 @@ section{
 
 article{
     display: flex;
-    width: 14rem;
+    width: 9rem;
     justify-content: space-around;
     gap: 1rem;
 }
