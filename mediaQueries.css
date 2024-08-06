@@ -125,8 +125,12 @@
     }
 
     article{
+      display: flex;
+      width: 9rem;
+      justify-content: space-around;
+      gap: 1rem;
       font-size: 1rem;
-    }
+  }
 
     .about-containers, .btn-container, .contact-info{
       flex-wrap: wrap;
