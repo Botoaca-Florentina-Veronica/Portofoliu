@@ -230,7 +230,7 @@
     }
   }
 
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 380px){
     .carousel img{
       width: 355px;
       height: 20rem;
@@ -249,7 +249,74 @@
       margin-top: 2rem;
       width:335px;
     }
+
+    #contact{
+      height: 30vh;
+      margin-bottom: 7rem;
+      margin-top: 3rem;
+    }
+
+    #photos{
+      margin-top: 5rem;
+    }
+
+    #experience{
+      margin-bottom: 30rem;
+      margin-top: 47rem;
+    }
+
   }
+
+  @media screen and (min-width: 380px) and (max-width: 440px){
+    .carousel img{
+      width: 355px;
+      height: 20rem;
+    }
+
+    #left {
+      display: none !important;
+    }
+    #right {
+        display: none !important;
+    }
+
+    .wrapper{
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+      width:335px;
+    }
+
+    #profile{
+      height: 70vh;
+    }
+
+    #about{
+      height:140vh;
+    }
+
+    #contact{
+      height: 30vh;
+      margin-bottom: 7rem;
+      margin-top: 3rem;
+    }
+
+    #photos{
+      margin-top: 5rem;
+      height:30vh;
+      margin-bottom: 23rem;
+    }
+
+    #experience{
+      margin-bottom: 7rem;
+      margin-top: 30rem;
+    }
+
+    .experience-details-container{
+      width:22rem;
+      margin-left: 0.7rem;
+  }
+}
 
 
 
