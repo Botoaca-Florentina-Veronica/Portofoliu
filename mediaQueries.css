@@ -308,11 +308,8 @@
     }
 
     .experience-details-container{
-      width:23rem;
+      width:20rem;
+      margin:2rem;
   }
 
-  .about-containers{
-    padding-left: 1.2rem;
-    padding-right: -3rem;
-  }
 }
