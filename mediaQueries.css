@@ -1,5 +1,6 @@
 /* when the screen size is lower than 1200px, the desktop nav will disapear
   and instead of the nav showing up, I want to see the hamburger menu*/
+
   @media screen and (max-width: 1550px){
     #profile {
       height: 83vh;
@@ -9,6 +10,7 @@
     .about-containers {
       flex-wrap: wrap;
     }
+
     .navbar-brand{
       margin-left: 0;
     }
@@ -20,6 +22,7 @@
       .navbar-nav {
         display: none;
       }
+
       .navbar-brand{
         margin-left: 0;
       }
@@ -85,36 +88,42 @@
     }
   
   }
+
+
   @media screen and (max-width:600px){
     #contact{
       height: 120vh;
       margin-top: 15rem;
     }
+
     .navbar-brand{
       margin-left: 0;
     }
+
     #profile{
       height: 90vh;
       margin-bottom: 10rem;
     }
+
     #about{
       height: 170vh;
       margin-top: 15rem;
     }
+
     #experience{
       height: 180vh;
       margin-top: 40rem;
-      margin-bottom: 0rem;
       margin-bottom: 20rem;
     }
 
     .upt{
-      width:320px;
-      height: 290px;
+      width:280px;
+      height: 250px;
       margin: auto;
       margin-bottom: 2rem;
       margin-top: 2rem;
     }
+
     article{
       display: flex;
       width: 9rem;
@@ -122,19 +131,24 @@
       gap: 1rem;
       font-size: 1rem;
   }
+
     .about-containers, .btn-container, .contact-info{
       flex-wrap: wrap;
     }
+
     .contact-info-container{
       margin:0;
       padding: 10px;
     }
+
     .experience-sub-title{
       font-size: 1.25rem;
     }
+
     .title{
       font-size: 2rem;
     }
+
     .text-p2{
       font-size: 1.25rem;
     }
@@ -216,9 +230,9 @@
     }
   }
 
-  @media screen and (max-width: 400px){
+  @media screen and (min-width: 300px){
     .carousel img{
-      width: 355px;
+      width: 300px;
       height: 20rem;
     }
 
@@ -233,6 +247,77 @@
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 2rem;
-      width:335px;
+      width:300px;
     }
+
+    #contact{
+      height: 30vh;
+      margin-bottom: 7rem;
+      margin-top: 3rem;
+    }
+
+    #photos{
+      margin-top: 5rem;
+    }
+
+    #experience{
+      margin-bottom: 30rem;
+      margin-top: 55rem;
+    }
+
+    #profile{
+      height: 106vh;
+    }
+
   }
+
+  @media screen and (min-width: 380px) and (max-width: 440px){
+    .carousel img{
+      width: 310px;
+      height: 20rem;
+    }
+
+    #left {
+      display: none !important;
+    }
+    #right {
+        display: none !important;
+    }
+
+    .wrapper{
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 3rem;
+      width:310px;
+    }
+
+    #profile{
+      height: 85vh;
+    }
+
+    #about{
+      height:130vh;
+    }
+
+    #contact{
+      height: 30vh;
+      margin-bottom: 7rem;
+      margin-top: 3rem;
+    }
+
+    #photos{
+      margin-top: 5rem;
+      height:30vh;
+      margin-bottom: 23rem;
+    }
+
+    #experience{
+      margin-bottom: 10rem;
+      margin-top: 40rem;
+    }
+
+    article{
+      width: 10rem;
+  }
+  
+}
