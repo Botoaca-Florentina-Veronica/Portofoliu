@@ -2,7 +2,25 @@
 function toggleDarkMode() {
     const body = document.querySelector('body');
     body.classList.toggle('dark-mode');
+
+    // Verifică dacă dark mode este activ și salvează starea în localStorage
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+    }
 }
+
+//pentru a pastra dark mode si dupa refresh
+document.addEventListener('DOMContentLoaded', (event) => {
+    const body = document.querySelector('body');
+    const darkMode = localStorage.getItem('darkMode');
+
+    if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
+    }
+});
+
 
 // SLIDESHOW code
 
