@@ -18,7 +18,7 @@
   }
   
     /* HAMBURGER MENU */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1500px) {
       .navbar-nav {
         display: none;
       }
@@ -64,16 +64,30 @@
         margin: 0 auto 2rem;
       }
   
-      .upt{
-        width:340px;
-        height: 250px;
-        margin: 0 auto 2rem;
-        justify-content: center;
-        display: flex;
-      }
   
       .about-containers{
         margin-top:0;
+      }
+
+      .carousel img{
+        width: 900px;
+        height: 700px;
+      }
+
+      .wrapper{
+        margin: auto;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        width: 900px;
+        padding: 1.5rem;
+      }
+
+      .upt{
+        width:550px;
+        height: 400px;
+        margin: 0 auto 2rem;
+        justify-content: center;
+        display: flex;
       }
   }
   
@@ -174,8 +188,8 @@
   }
   @media screen and (min-width: 750px) and (max-width:899px){
     .carousel img{
-      width: 100%;
-      height: 25rem;
+      width: 600px;
+      height: 500px;
     }
     .wrapper{
       margin:auto;
@@ -183,32 +197,43 @@
       justify-content: center;
       padding: 0.5rem;
       margin-top: 2rem;
-      width:650px;
+      width: 600px;
     }
+
+    .wrapper i{
+      top: 55%;
+    }
+
   }
   @media screen and (min-width: 900px) and (max-width: 1200px){
     .carousel img{
-      width: 100%;
-      height: 30rem;
+      width: 700px;
+      height: 600px;
     }
     .wrapper{
       margin:auto;
       flex-wrap: wrap;
       margin-top: 2rem;
-      width:500px;
+      width: 700px;
+    }
+
+    .wrapper i{
+      top: 70%;
     }
   }
   
   @media screen and (min-width:1500px){
+
     .carousel img{
-      width: calc(100% / 2);
-      height: 500px;
+      width: 900px;
+      height: 700px;
     }
+
     .wrapper{
       margin: auto;
       flex-wrap: wrap;
       margin-top: 2rem;
-      width: 1300px;
+      width: 900px;
       padding: 1.5rem;
     }
 
