@@ -186,7 +186,7 @@
       width:550px;
     }
   }
-  @media screen and (min-width: 750px) and (max-width:899px){
+  @media screen and (min-width: 750px) and (max-width:900px){
     .carousel img{
       width: 600px;
       height: 500px;
@@ -205,11 +205,12 @@
     }
 
   }
-  @media screen and (min-width: 900px) and (max-width: 1200px){
+  @media screen and (min-width: 900px) and (max-width: 1500px){
     .carousel img{
       width: 700px;
-      height: 600px;
+      height: 500px;
     }
+
     .wrapper{
       margin:auto;
       flex-wrap: wrap;
@@ -219,6 +220,28 @@
 
     .wrapper i{
       top: 70%;
+    }
+
+    #contact{
+      height: 30vh;
+      margin-bottom: 10rem;
+      margin-top: 10rem;
+    }
+
+    #profile{
+      height: 100vh;
+    }
+
+    #experience{
+      height:150vh;
+      margin-top: 20vh;
+      margin-bottom: 10vh;
+    }
+
+    #photos{
+      height:120vh;
+      margin-top: 10vh;
+      margin-bottom: 10rem;
     }
   }
   
