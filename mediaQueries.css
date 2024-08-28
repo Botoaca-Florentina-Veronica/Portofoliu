@@ -94,7 +94,8 @@
   @media screen and (min-width: 1200px){
       #about{
         margin-top: 20vh;
-        height:150vh;
+        height:170vh;
+        margin-bottom: 10vh;
       }
 
       .about-containers, .btn-container, .contact-info{
@@ -102,8 +103,8 @@
       }
 
       .upt{
-        width:550px;
-        height: 400px;
+        width:430px;
+        height: 350px;
         margin: 0 auto 2rem;
         justify-content: center;
         display: flex;
