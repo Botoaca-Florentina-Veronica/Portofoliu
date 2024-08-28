@@ -18,7 +18,7 @@
   }
   
     /* HAMBURGER MENU */
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1200px) {
       .navbar-nav {
         display: none;
       }
@@ -88,6 +88,48 @@
         margin: 0 auto 2rem;
         justify-content: center;
         display: flex;
+      }
+  }
+
+  @media screen and (min-width: 1200px){
+      #about{
+        margin-top: 20vh;
+        height:150vh;
+      }
+
+      .about-containers, .btn-container, .contact-info{
+        flex-wrap: wrap;
+      }
+
+      .upt{
+        width:550px;
+        height: 400px;
+        margin: 0 auto 2rem;
+        justify-content: center;
+        display: flex;
+      }
+
+      section, .section-container{
+        height: fit-content;
+      }
+  
+      section{
+        margin:0 5%;
+      }
+
+      .icon-arrow{
+        margin-right: 60px;
+        margin-bottom: 90px;
+      }
+
+      .pic-container{
+        width: 275px;
+        height: 275px;
+      }
+
+      #profile{
+        height: 10vh;
+        margin-bottom: 10vh;
       }
   }
   
@@ -171,6 +213,7 @@
     }
 
   }
+
   /* PHOTO SLIDESHOW*/
   @media screen and (max-width:749px){
     .carousel img{
