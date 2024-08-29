@@ -266,7 +266,6 @@
     }
 
     .cat-sticker{
-      margin-left: 12vh;
       height: 500px;
       width: 450px;
     }
@@ -438,8 +437,9 @@
     width:45vh;
   }
 
+
   .cat-sticker{
-    margin: 0 auto 2rem;
+    margin-left: -4vh;
   }
 
 }
@@ -499,6 +499,10 @@
   margin-top: -20vh;
   height:25vh;
   width:43vh;
+}
+
+.cat-sticker{
+  margin-left: -1vh;
 }
 
 }
