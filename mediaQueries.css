@@ -69,19 +69,6 @@
         margin-top:0;
       }
 
-      .carousel img{
-        width: 900px;
-        height: 700px;
-      }
-
-      .wrapper{
-        margin: auto;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-        width: 900px;
-        padding: 1.5rem;
-      }
-
       .upt{
         width:550px;
         height: 400px;
@@ -143,7 +130,6 @@
       justify-content: center;
       display: flex;
     }
-
   }
 
 
@@ -215,26 +201,43 @@
 
   }
 
-  /* PHOTO SLIDESHOW*/
-  @media screen and (max-width:749px){
-    .carousel img{
-      width: 100%;
-      height: 20rem;
+  @media screen and (min-width: 600px) and (max-width:750px){
+    #profile{
+      height: 100vh;
+      margin-bottom: 10rem;
     }
+
+    .carousel img{
+      width: 500px;
+      height: 450px;
+    }
+
     .wrapper{
       margin:auto;
       flex-wrap: wrap;
       justify-content: center;
       padding: 0.5rem;
       margin-top: 2rem;
-      width:550px;
+      width: 500px;
+    }
+
+    .wrapper i{
+      top: 55%;
     }
   }
+
   @media screen and (min-width: 750px) and (max-width:900px){
+    
+    #profile{
+      height: 100vh;
+      margin-bottom: 10rem;
+    }
+    
     .carousel img{
       width: 600px;
       height: 500px;
     }
+
     .wrapper{
       margin:auto;
       flex-wrap: wrap;
@@ -247,8 +250,8 @@
     .wrapper i{
       top: 55%;
     }
-
   }
+
   @media screen and (min-width: 900px) and (max-width: 1500px){
     .carousel img{
       width: 700px;
@@ -353,20 +356,6 @@
 
   }
 
-  @media screen and (max-height: 600px){
-    #profile{
-      height:230vh;
-    }
-
-    #photos{
-      height:115vh;
-    }
-
-    #contact{
-      height:200vh;
-    }
-  }
-
   @media screen and (min-width: 329px) and (max-width: 400px){
     .carousel img{
       width: 320px;
@@ -450,7 +439,7 @@
   #contact{
     height: 50vh;
     margin-bottom: 8rem;
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
 
   #photos{
@@ -460,6 +449,7 @@
   }
 
   #experience{
+    height: 230vh;
     margin-bottom: 10rem;
     margin-top: 40rem;
   }
@@ -467,5 +457,35 @@
   article{
     width: 10rem;
 }
+}
 
+@media screen and (min-width: 440px) and (max-width:600px){
+  .carousel img{
+    width: 370px;
+    height: 350px;
+  }
+
+  .wrapper{
+    margin:auto;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 370px;
+  }
+
+  #photos{
+    margin-top: 10rem;
+    height:50vh;
+    margin-bottom: 13rem;
+  }
+
+  #contact{
+    height: 60vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+  }
+
+  #experience{
+    height:150vh;
+    margin-bottom: 20vh;
+  }
 }
