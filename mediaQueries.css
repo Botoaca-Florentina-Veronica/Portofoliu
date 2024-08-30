@@ -411,8 +411,8 @@
     }
 
     #photos{
-      margin-top: 23rem;
-      height:50vh;
+      margin-top: 33rem;
+      height:70vh;
       margin-bottom: 13rem;
     }
 
@@ -439,7 +439,9 @@
 
 
   .cat-sticker{
-    margin-left: -4vh;
+    width:450px;
+    height: 420px;
+    margin-left: -8vh;
   }
 
 }
