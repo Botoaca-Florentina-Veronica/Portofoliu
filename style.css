@@ -546,4 +546,9 @@ article .checkmark-icon{
 .cat-sticker{
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-left: 3vh;
+  gap:3rem;
+  height: 350px;
+  width: 400px;
 }
