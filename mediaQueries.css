@@ -141,177 +141,6 @@
   }
 
 
-  @media screen and (max-width:600px){
-    #contact{
-      height: 120vh;
-      margin-top: 15rem;
-    }
-
-    .navbar-brand{
-      margin-left: 0;
-    }
-
-    #profile{
-      height: 90vh;
-      margin-bottom: 10rem;
-    }
-
-    #about{
-      height: 170vh;
-      margin-top: 15rem;
-    }
-
-    #experience{
-      height: 180vh;
-      margin-top: 40rem;
-      margin-bottom: 0rem;
-      margin-bottom: 20rem;
-    }
-
-    .upt{
-      width:320px;
-      height: 290px;
-      width:280px;
-      height: 250px;
-      margin: auto;
-      margin-bottom: 2rem;
-      margin-top: 2rem;
-    }
-
-    article{
-      display: flex;
-      width: 9rem;
-      justify-content: space-around;
-      gap: 1rem;
-      font-size: 1rem;
-  }
-
-    .about-containers, .btn-container, .contact-info{
-      flex-wrap: wrap;
-    }
-
-    .contact-info-container{
-      margin:0;
-      padding: 10px;
-    }
-
-    .experience-sub-title{
-      font-size: 1.25rem;
-    }
-
-    .title{
-      font-size: 2rem;
-    }
-
-    .text-p2{
-      font-size: 1.25rem;
-    }
-
-  }
-
-  @media screen and (min-width: 600px) and (max-width:750px){
-    #profile{
-      height: 100vh;
-      margin-bottom: 10rem;
-    }
-
-    .carousel img{
-      width: 500px;
-      height: 450px;
-    }
-
-    .wrapper{
-      margin:auto;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0.5rem;
-      margin-top: 2rem;
-      width: 500px;
-    }
-
-    .wrapper i{
-      top: 55%;
-    }
-  }
-
-  @media screen and (min-width: 750px) and (max-width:900px){
-    
-    #profile{
-      height: 100vh;
-      margin-bottom: 10rem;
-    }
-    
-    .carousel img{
-      width: 600px;
-      height: 500px;
-    }
-
-    .wrapper{
-      margin:auto;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0.5rem;
-      margin-top: 2rem;
-      width: 600px;
-    }
-
-    .wrapper i{
-      top: 55%;
-    }
-
-    .stickman{
-      margin-top: -60vh;
-      height:40vh;
-      width:62vh;
-    }
-
-    .cat-sticker{
-      height: 500px;
-      width: 450px;
-    }
-  }
-
-  @media screen and (min-width: 900px) and (max-width: 1500px){
-    .carousel img{
-      width: 700px;
-      height: 500px;
-    }
-
-    .wrapper{
-      margin:auto;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-      width: 700px;
-    }
-
-    .wrapper i{
-      top: 70%;
-    }
-
-    #contact{
-      height: 30vh;
-      margin-bottom: 10rem;
-      margin-top: 10rem;
-    }
-
-    #profile{
-      height: 100vh;
-    }
-
-    #experience{
-      height:150vh;
-      margin-top: 20vh;
-      margin-bottom: 10vh;
-    }
-
-    #photos{
-      height:120vh;
-      margin-top: 10vh;
-      margin-bottom: 10rem;
-    }
-  }
-  
-
   @media screen and (max-width: 330px){
     .carousel img{
       width: 355px;
@@ -591,6 +420,176 @@
   }
 }
 
+@media screen and (max-width:600px){
+  #contact{
+    height: 120vh;
+    margin-top: 15rem;
+  }
+
+  .navbar-brand{
+    margin-left: 0;
+  }
+
+  #profile{
+    height: 90vh;
+    margin-bottom: 10rem;
+  }
+
+  #about{
+    height: 170vh;
+    margin-top: 15rem;
+  }
+
+  #experience{
+    height: 180vh;
+    margin-top: 40rem;
+    margin-bottom: 0rem;
+    margin-bottom: 20rem;
+  }
+
+  .upt{
+    width:320px;
+    height: 290px;
+    width:280px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  article{
+    display: flex;
+    width: 9rem;
+    justify-content: space-around;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+  .about-containers, .btn-container, .contact-info{
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container{
+    margin:0;
+    padding: 10px;
+  }
+
+  .experience-sub-title{
+    font-size: 1.25rem;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  .text-p2{
+    font-size: 1.25rem;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width:750px){
+  #profile{
+    height: 100vh;
+    margin-bottom: 10rem;
+  }
+
+  .carousel img{
+    width: 500px;
+    height: 450px;
+  }
+
+  .wrapper{
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    width: 500px;
+  }
+
+  .wrapper i{
+    top: 55%;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width:900px){
+    
+  #profile{
+    height: 100vh;
+    margin-bottom: 10rem;
+  }
+  
+  .carousel img{
+    width: 600px;
+    height: 500px;
+  }
+
+  .wrapper{
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    width: 600px;
+  }
+
+  .wrapper i{
+    top: 55%;
+  }
+
+  .stickman{
+    margin-top: -60vh;
+    height:40vh;
+    width:62vh;
+  }
+
+  .cat-sticker{
+    height: 500px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px){
+  .carousel img{
+    width: 700px;
+    height: 500px;
+  }
+
+  .wrapper{
+    margin:auto;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 700px;
+  }
+
+  .wrapper i{
+    top: 70%;
+  }
+
+  #contact{
+    height: 30vh;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+  }
+
+  #profile{
+    height: 100vh;
+  }
+
+  #experience{
+    height:150vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+  }
+
+  #photos{
+    height:120vh;
+    margin-top: 10vh;
+    margin-bottom: 10rem;
+  }
+}
+
 @media screen and (min-width:1500px){
 
   #profile{
@@ -618,14 +617,26 @@
 
   #photos{
     margin-bottom: 2rem;
+    height: 130vh;
+    margin-top:-40vh;
+  }
+
+  #experience{
+    height:150vh;
+    margin-bottom: 20vh;
+    margin-top: 30vh;
+  }
+
+  #contact{
     height: 80vh;
+    margin-top: 10vh;
   }
   
   .stickman{
     margin-top: -35vh;
-    margin-bottom: 10vh;
+    margin-bottom: -15vh;
     height:85vh;
-    width:1150px;
+    width:1300px;
  }
 
   .cat-sticker{
@@ -634,4 +645,10 @@
     margin-left: -5vh;
     margin-bottom: 5vh;
   }
+
+  .pic-container{
+    margin-top: 5vh;
+  }
 }
+
+
