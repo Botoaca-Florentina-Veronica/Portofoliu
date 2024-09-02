@@ -1,34 +1,26 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
-
 * {
   padding: 0;
   margin: 0;
 }
-
 body {
   font-family: "Martian Mono", monospace;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 p {
   color: rgb(12, 12, 12);
 }
-
 /*  TRANSITION */
 a, .btn {
     transition: all 300ms ease;
 }
-
-
 /* NAVIGATION BAR */
 nav, .nav-links {
     display: flex;
 }
-
 nav {
     justify-content: space-around;
     align-items: center;
@@ -40,41 +32,33 @@ nav {
     list-style: none;
     font-size: 1.5rem;
 }
-
 .navbar{
     background-color:white;
 }
-
 .navbar-brand{
     font-size: 2rem;
     font-family: "Martian Mono", monospace;
     margin-left: -80px;
 }
-
 .navbar-brand:hover{
     cursor: default;
 }
-
 .nav-item{
     margin-right: 55px;
 }
-
 .nav-link {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
     color: black;
   }
-
 .nav-link:hover{
     color: gray;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: gray;
   }
-
 /* SECTIONS */
-
 section{
     padding-top: 2rem;
     height:96vh;
@@ -82,80 +66,64 @@ section{
     box-sizing: border-box;
     min-height: fit-content;
 }
-
 .section-container{
     display:flex;
 }
-
 /* PROFILE SECTION */
-
 #profile{
     display: flex;
     justify-content: center;
     gap:5rem;
     height:80vh;
 }
-
 .pic-container{
     display: flex;
     height: 400px;
     width:400px;
     margin-top: 10rem;
-
 }
-
 .text{
     align-self: center;
     text-align: center;
 }
-
 .text-p1 .text-p2{
     font-weight: 600;
 }
-
 .text-p1{
     text-align: center;
 }
-
 .text-p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
-
 .title{
     font-size: 3rem;
     text-align: center;
 }
-
 #social-container{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
 }
-
 /* ICONS */
-
 .icon-linkedIn{
     cursor: pointer;
     height: 70px;
     width: 70px;
 }
-
 .icon{
     cursor: pointer;
     margin-top:10px;
     height: 50px;
     width: 50px;
 }
-
 .icon-university{
     cursor: pointer;
     height: 120px;
     width: 120px;
     margin-left: 20px;
 }
-
 .icon-highschool{
     cursor: pointer;
     height: 90px;
@@ -163,7 +131,6 @@ section{
     margin-bottom: 30px;
     margin-top: 20px;
 }
-
 .icon-arrow{
     position: absolute;
     cursor: pointer;
@@ -172,7 +139,6 @@ section{
     height: 50px;
     width: 50px;
 }
-
 .checkmark-icon{
     cursor: pointer;
     height: 30px;
@@ -180,7 +146,6 @@ section{
     margin-bottom: 30px;
     margin-top: 20px;
 }
-
 .contact-icon
 {
     cursor: pointer;
@@ -188,13 +153,11 @@ section{
     width: 50px;   
 }
 /* BUTTONS */
-
 .btn-container{
     display: flex;
     justify-content: center;
     gap:1rem;
 }
-
 .btn{
     font-weight: 600;
     transition: all 300ms ease;
@@ -202,65 +165,51 @@ section{
     width:12rem;
     border-radius:2rem;
 }
-
 .btn-color-1, .btn-color-2{
     border: rgb(130, 130, 130) 0.1rem solid;
 }
-
 .btn-color-1:hover, .btn-color-2:hover{
     cursor:pointer;
 }
-
 .btn-color-1:hover{
     background: rgb(0, 0, 0);
     color:white;
 }
-
 .btn-color-1, .btn-color-2:hover{
     background: rgb(130, 130, 130);
     color:white;
 }
-
 .btn-color-2{
     background: none;
 }
-
 .btn-color-2:hover{
     border: rgb(255, 255, 255) 0.1rem solid;
 }
-
 .btn-container{
     gap:1rem;
 }
-
 /* ABOUT */
-
 .upt{
   margin-top: 120px;
   border-radius: 9%;
   height: 500px;
   width: 650px;
 }
-
 #about{
     position: relative;
 }
-
 .about-containers{
     gap:2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
 .about-details{
     justify-content: center;
     flex-direction: column;
 }
-
 .about-containers, .about-details{
     display: flex;
 }
-
 .details-container{
     padding: 1rem;
     flex:1;
@@ -271,38 +220,30 @@ section{
     text-align: center;
     width:450px;
 }
-
 .section-container{
     gap:4rem;
     height:80%;
 }
-
 .pic-container-upt{
-    margin: auto 0;
+    margin:auto 0;
 }
-
-
 /* EXPERIENCE */
-
 #experience{
     position: relative;
     justify-content: center;
 }
-
 .experience-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom:4rem;
 }
-
 .experience-details-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 6rem;
 }
-
 .article-container{
     display: flex;
     text-align: initial;
@@ -311,29 +252,22 @@ section{
     gap: 2.5rem;
     justify-content: space-around;
 }
-
 article{
     display: flex;
     width: 14rem;
     justify-content: space-around;
     gap: 1rem;
 }
-
-
-
 article .checkmark-icon{
     cursor: default;
 }
-
 /* CONTACT */
-
 #contact{
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
 }
-
 .contact-info{
     display: flex;
     justify-content: center;
@@ -345,7 +279,6 @@ article .checkmark-icon{
     padding: 0.5rem;
     margin-top: 5rem;
 }
-
 .contact-info-container{
     display: flex;
     justify-content: center;
@@ -354,11 +287,9 @@ article .checkmark-icon{
     margin: 1rem;
     margin-top: 2rem;
 }
-
 .contact-info-container p{
     font-size:larger;
 }
-
 /* DARK MODE TOGGLE BUTTON */
 .dark-mode-toggle {
     top: 50px;
@@ -380,7 +311,6 @@ article .checkmark-icon{
     background-color: rgb(206, 203, 203);
     cursor: pointer;
   }
-
   /* DARK MODE STYLES */
   body.dark-mode {
     background-color: #393939;
@@ -391,15 +321,12 @@ article .checkmark-icon{
   .dark-mode p{
     color: antiquewhite;
   }
-
   .dark-mode h1{
     color: antiquewhite;
   }
-
   .dark-mode h3{
     color: antiquewhite;
   }
-
   .dark-mode ul a{
     color: antiquewhite;
   }
@@ -408,40 +335,30 @@ article .checkmark-icon{
     background-color: #393939;
     color: antiquewhite;
   }
-
   .dark-mode .details-container{
     background-color: #393939;
   }
-
   .dark-mode .experience-sub-title{
     color:antiquewhite;
   }
-
   .dark-mode .btn-color-2{
     color: antiquewhite;
   }
-
   .dark-mode .btn-color-2:hover{
     color:black
   }
-
   .dark-mode .btn-color-1:hover{
     color:antiquewhite;
   }
-
   .dark-mode .btn-color-1{
     color: black;
   }
-
 /* PHOTOS */
-
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 #photos{
   height:90vh;
 }
-
 .wrapper{
   display: flex;
   justify-content: space-around;
@@ -450,7 +367,6 @@ article .checkmark-icon{
   margin-top: 3rem;
   height: 50vh;
 }
-
 .wrapper i{
   top: 80%;
   height: 44px;
@@ -466,24 +382,19 @@ article .checkmark-icon{
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-
 .wrapper i:active{
   transform: translateY(-50%) scale(0.9);
 }
-
 .wrapper i:hover{
   background: #929090;
 }
-
 .wrapper i:first-child{
   left: -32px;
   display: none;
 }
-
 .wrapper i:last-child{
   right: -32px;
 }
-
 .wrapper .carousel{
   font-size: 0px;
   cursor: pointer;
@@ -491,16 +402,13 @@ article .checkmark-icon{
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-
 .carousel.dragging{
   cursor: grab;
   scroll-behavior: auto;
 }
-
 .carousel.dragging img{
   pointer-events: none;
 }
-
 .carousel img{
   height: 300px;
   object-fit: cover;
@@ -515,21 +423,12 @@ article .checkmark-icon{
 
 /* STICKERS */
 
-.stickman{
-  display: flex;
-  justify-content: center;
-  height: 600px;
-  width: 1150px;
-  margin-top:-400px;
-  margin-bottom: -150px;
-}
-
-
 .cat-sticker{
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  position: relative;
   margin-left: 3vh;
+  gap:3rem;
   height: 350px;
   width: 400px;
 }
