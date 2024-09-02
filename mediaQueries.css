@@ -86,7 +86,7 @@
       }
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) and (max-width: 1500px){
       #about{
         margin-top: 20vh;
         height:170vh;
@@ -230,13 +230,6 @@
     width: 10rem;
   }
 
-  .stickman{
-    margin-top: -5vh;
-    margin-bottom: 10vh;
-    height:28vh;
-    width:330px;
-  }
-
   .cat-sticker{
     width:350px;
     height: 340px;
@@ -310,13 +303,6 @@
     width: 10rem;
   }
 
-  .stickman{
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    height:28vh;
-    width:350px;
- }
-
   .cat-sticker{
     width:400px;
     height: 380px;
@@ -367,19 +353,13 @@
   }
 
   #experience{
-    height: 180vh;
+    height: 170vh;
     margin-bottom: 5rem;
     margin-top: 65rem;
   }
 
   article{
     width: 10rem;
-  }
-
-  .stickman{
-    margin-top: -25vh;
-    height:25vh;
-    width:43vh;
   }
 
   .cat-sticker{
@@ -538,12 +518,6 @@
     top: 55%;
   }
 
-  .stickman{
-    margin-top: -60vh;
-    height:40vh;
-    width:62vh;
-  }
-
   .cat-sticker{
     height: 500px;
     width: 450px;
@@ -631,13 +605,6 @@
     height: 80vh;
     margin-top: 10vh;
   }
-  
-  .stickman{
-    margin-top: -35vh;
-    margin-bottom: -15vh;
-    height:85vh;
-    width:1300px;
- }
 
   .cat-sticker{
     width:400px;
@@ -648,6 +615,36 @@
 
   .pic-container{
     margin-top: 5vh;
+  }
+
+  .about-containers, .btn-container, .contact-info{
+    flex-wrap: wrap;
+  }
+
+  .upt{
+    width:430px;
+    height: 350px;
+    margin: 0 auto 2rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  section, .section-container{
+    height: fit-content;
+  }
+
+  section{
+    margin:0 5%;
+  }
+
+  .icon-arrow{
+    margin-right: 30px;
+  }
+
+  .pic-container{
+    width: 350px;
+    height: 350px;
+    margin-top: 2vh;
   }
 }
 
