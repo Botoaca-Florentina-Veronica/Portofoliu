@@ -618,13 +618,14 @@
 
   #photos{
     margin-bottom: 2rem;
+    height: 80vh;
   }
   
   .stickman{
     margin-top: -35vh;
     margin-bottom: 10vh;
     height:85vh;
-    width:1250px;
+    width:1150px;
  }
 
   .cat-sticker{
