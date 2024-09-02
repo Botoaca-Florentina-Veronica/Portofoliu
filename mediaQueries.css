@@ -311,27 +311,6 @@
     }
   }
   
-  @media screen and (min-width:1500px){
-
-    .carousel img{
-      width: 900px;
-      height: 700px;
-    }
-
-    .wrapper{
-      margin: auto;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-      width: 900px;
-      padding: 1.5rem;
-    }
-
-    #photos{
-      margin-bottom: 2rem;
-    }
-  }
-
-  
 
   @media screen and (max-width: 330px){
     .carousel img{
@@ -566,20 +545,19 @@
 
   article{
     width: 10rem;
-}
+  }
 
-.stickman{
-  margin-top: -25vh;
-  height:25vh;
-  width:43vh;
-}
+  .stickman{
+    margin-top: -25vh;
+    height:25vh;
+    width:43vh;
+  }
 
-.cat-sticker{
-  margin-left: -4vh;
-  width:430px;
-  height:400px;
-}
-
+  .cat-sticker{
+    margin-left: -4vh;
+    width:430px;
+    height:400px;
+  }
 }
 
 @media screen and (min-width: 440px) and (max-width:600px){
@@ -610,5 +588,55 @@
   #experience{
     height:150vh;
     margin-bottom: 20vh;
+  }
+}
+
+@media screen and (min-width:1500px){
+
+  #profile{
+    margin-top: 15vh;
+    height: 50vh;
+  }
+
+  #about{
+    height: 100vh;
+    margin-top: 15rem;
+  }
+
+  .carousel img{
+    width: 900px;
+    height: 700px;
+  }
+
+  .wrapper{
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 900px;
+    padding: 1.5rem;
+  }
+
+  #photos{
+    margin-bottom: 2rem;
+  }
+  
+  .stickman{
+    margin-top: -35vh;
+    margin-bottom: 10vh;
+    height:85vh;
+    width:1600px;
+ }
+
+  .cat-sticker{
+    width:400px;
+    height: 380px;
+    margin-left: -5vh;
+    margin-bottom: 5vh;
+  }
+
+  .pic-container{
+    height: 407px;
+    width:407px;
+    margin-top: 2vh;
   }
 }
