@@ -183,7 +183,7 @@
 
   }
 
-  @media screen and (min-width: 329px) and (max-width: 370px){
+  @media screen and (min-width: 329px) and (max-width: 376px){
   .carousel img{
     width: 350px;
     height: 20rem;
@@ -199,12 +199,12 @@
 
   #profile{
     height: 100vh;
-    margin-bottom: 5vh;
+    margin-bottom: 35vh;
   }
 
   #about{
     height:300vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-bottom: 5vh;
   }
 
@@ -215,7 +215,7 @@
   }
 
   #photos{
-    margin-top: 20vh;
+    margin-top: 50vh;
     height:70vh;
     margin-bottom: 13vh;
   }
@@ -223,7 +223,7 @@
   #experience{
     height: 200vh;
     margin-bottom: 5vh;
-    margin-top: 10vh;
+    margin-top: 25vh;
   }
 
   article{
@@ -250,7 +250,7 @@
 
 }
 
-@media screen and (min-width: 370px) and (max-width: 400px){
+@media screen and (min-width: 376px) and (max-width: 400px){
   .carousel img{
     width: 350px;
     height: 20rem;
@@ -271,30 +271,30 @@
   }
 
   #profile{
-    height: 100vh;
+    height: 120vh;
     margin-bottom: 5vh;
   }
 
   #about{
-    height:330vh;
-    margin-top: 10vh;
+    height:250vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
   }
 
   #contact{
-    height: 100vh;
-    margin-bottom: 2vh;
-    margin-top: 13vh;
+    height: 80vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
   }
 
   #photos{
-    margin-top: 20vh;
+    margin-top: 5vh;
     height:70vh;
-    margin-bottom: 13vh;
+    margin-bottom: -5vh;
   }
 
   #experience{
-    height: 230vh;
+    height: 200vh;
     margin-bottom: 5vh;
     margin-top: 10vh;
   }
@@ -336,14 +336,15 @@
   }
 
   #about{
-    height:130vh;
-    margin-bottom: 20rem;
+    height:180vh;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
   }
 
   #contact{
-    height: 100vh;
+    height: 110vh;
     margin-bottom: -2vh;
-    margin-top: -15vh;
+    margin-top: -25vh;
   }
 
   #photos{
@@ -353,9 +354,11 @@
   }
 
   #experience{
-    height: 170vh;
-    margin-bottom: 5rem;
-    margin-top: 65rem;
+    height: 180vh;
+    margin-top: 40rem;
+    margin-bottom: 14rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   article{
@@ -401,30 +404,9 @@
 }
 
 @media screen and (max-width:600px){
-  #contact{
-    height: 120vh;
-    margin-top: 15rem;
-  }
-
+  /*nu uita sa stergi aici acest media!*/
   .navbar-brand{
     margin-left: 0;
-  }
-
-  #profile{
-    height: 90vh;
-    margin-bottom: 10rem;
-  }
-
-  #about{
-    height: 170vh;
-    margin-top: 15rem;
-  }
-
-  #experience{
-    height: 180vh;
-    margin-top: 40rem;
-    margin-bottom: 0rem;
-    margin-bottom: 20rem;
   }
 
   .upt{
