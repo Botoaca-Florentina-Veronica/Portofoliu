@@ -624,7 +624,7 @@
     margin-top: -35vh;
     margin-bottom: 10vh;
     height:85vh;
-    width:1600px;
+    width:1500px;
  }
 
   .cat-sticker{
@@ -632,11 +632,5 @@
     height: 380px;
     margin-left: -5vh;
     margin-bottom: 5vh;
-  }
-
-  .pic-container{
-    height: 407px;
-    width:407px;
-    margin-top: 2vh;
   }
 }
