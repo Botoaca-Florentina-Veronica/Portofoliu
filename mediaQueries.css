@@ -230,7 +230,7 @@
   }
 
   #profile{
-    height: 120vh;
+    height: 140vh;
     margin-bottom: 5vh;
   }
 
@@ -291,13 +291,13 @@
   }
 
   #profile{
-    height: 85vh;
+    height: 140vh;
   }
 
   #about{
-    height:180vh;
+    height:250vh;
     margin-bottom: 5rem;
-    margin-top: -5rem;
+    margin-top: 5rem;
   }
 
   #contact{
@@ -410,7 +410,7 @@
 
 @media screen and (min-width: 600px) and (max-width:670px){
   #profile{
-    height: 200vh;
+    height: 140vh;
     margin-bottom: 20vh;
   }
 
@@ -433,7 +433,7 @@
   }
 
   #photos{
-    height: 200vh;
+    height: 100vh;
   }
 
   #contact{
@@ -469,7 +469,7 @@
 @media screen and (min-width: 750px) and (max-width:920px){
     
   #profile{
-    height: 80vh;
+    height: 120vh;
     margin-bottom: 2rem;
   }
   
@@ -498,7 +498,7 @@
 
   #photos{
     margin-top: 10rem;
-    height:50vh;
+    height:80vh;
     margin-bottom: 13rem;
   }
 }
