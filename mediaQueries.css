@@ -581,7 +581,7 @@
   }
 
   #profile{
-    height: 10vh;
+    height: 100vh;
     margin-bottom: 10vh;
   }
 }
@@ -669,5 +669,4 @@
     margin-top: 2vh;
   }
 }
-
 
