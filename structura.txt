@@ -1,0 +1,31 @@
+portofoliu/
+├── frontend/                # Aplicația React (Vite)
+│   ├── public/              # Assets-uri statice (ex.: index.html, imagini)
+│   ├── src/
+|   |   ├── assets/
+│   │   ├── pages/           # Pagini (Home, About, Projects)
+│   │   ├── components/      
+|   |   |   ├── DarkModeToggle.jsx              
+|   |   |   ├── Header.jsx
+|   |   |   ├── ProfileSection.jsx
+|   |   |   ├── EducationSection.jsx
+|   |   |   ├── Experience.jsx          
+|   |   |   ├── Content.jsx
+|   |   |   ├── Footer.jsx
+|   ├── App.css               # Fișier principal care importă toate celelalte
+|   ├── App.jsx               # Componenta principală
+|   └── main.jsx              # Punctul de intrare (Vite)
+│   ├── .eslintrc            # Config ESLint (opțional)
+│   ├── vite.config.js       # Configurare Vite
+│   └── package.json         # Dependențe frontend (React, MUI, etc.)
+│
+├── backend/                 # Backend (Node.js + Express)
+│   ├── controllers/         # Logică pentru rute (ex.: projectsController.js)
+│   ├── routes/              # Rute API (ex.: api/projects.js)
+│   ├── models/              # Modele de date (dacă folosești DB)
+│   ├── app.js               # Configurare Express (middleware, rute)
+│   ├── server.js            # Punctul de intrare backend
+│   └── package.json         # Dependențe backend (Express, CORS, etc.)
+│
+├── .gitignore               # Fișiere ignorate de Git (ex.: node_modules/)
+└── README.md                # Documentație proiect
