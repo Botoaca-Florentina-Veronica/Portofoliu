@@ -59,7 +59,7 @@ const Content = ({ darkMode }) => {
           margin: '0.5rem 0 0',
           fontSize: '2.8rem',
           fontWeight: 700,
-          color: darkMode ? '#fff' : '#222'
+          color: darkMode ? 'antiquewhite' : '#222'
         }}>My Gallery</h1>
       </div>
 
