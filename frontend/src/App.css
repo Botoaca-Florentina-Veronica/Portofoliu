@@ -501,8 +501,8 @@ article .checkmark-icon {
 
 /* Buttons */
 .dark-mode .btn-color-1 {
-  background-color: #3f1b0f;
-  color: antiquewhite;
+  background-color: antiquewhite;
+  color: #2d2d2d;
   border-color: #503f25;
 }
 
@@ -513,7 +513,7 @@ article .checkmark-icon {
 }
 
 .dark-mode .btn-color-1:hover {
-  background-color: #503f25;
+  background-color: #e2e7eb;
 }
 
 .dark-mode .btn-color-2:hover {
