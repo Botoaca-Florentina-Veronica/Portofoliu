@@ -2,14 +2,14 @@ import { useRef } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 import bazooka from '../assets/bazooka.JPG';
+import croatia2 from '../assets/croatia2.jpg';
 import sunset from '../assets/sunset.jpg';
-import timisoara from '../assets/timisoara.jpg';
 import bazooka2 from '../assets/bazooka2.JPG';
 import croatia from '../assets/croatia.jpg';
-import teatru from '../assets/teatru.JPG';
 import catedrala from '../assets/catedrala.JPG';
 import ski from '../assets/ski.jpg';
 import pasare from '../assets/pasare.JPG';
+import brasov from '../assets/brasov.jpg';
 
 const Content = ({ darkMode }) => {
   const carousel = useRef(null);
@@ -26,12 +26,12 @@ const Content = ({ darkMode }) => {
 
   const images = [
     { src: bazooka, alt: "Bazooka" },
+    { src: croatia2, alt: "Croatia 2" },
     { src: sunset, alt: "Sunset" },
-    { src: timisoara, alt: "Timișoara" },
     { src: bazooka2, alt: "Bazooka 2" },
     { src: croatia, alt: "Croatia" },
     { src: catedrala, alt: "Catedrala" },
-    { src: teatru, alt: "Teatru" },
+    { src: brasov, alt: "Brasov" },
     { src: ski, alt: "Ski" },
     { src: pasare, alt: "Pasăre" }
   ];

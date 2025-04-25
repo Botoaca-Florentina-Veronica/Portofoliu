@@ -43,6 +43,14 @@ const Experience = ({ darkMode }) => {
                   <p>Intermediate</p>
                 </div>
               </article>
+
+              <article>
+                <img src={checkmark} alt="checkmark logo" className="checkmark-icon" />
+                <div>
+                  <h3>MUI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
 
@@ -68,8 +76,8 @@ const Experience = ({ darkMode }) => {
               <article>
                 <img src={checkmark} alt="checkmark logo" className="checkmark-icon" />
                 <div>
-                  <h3>MySQL</h3>
-                  <p>Begginer</p>
+                  <h3>NodeJS</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
 
