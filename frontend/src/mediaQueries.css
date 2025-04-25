@@ -92,11 +92,6 @@
 
 
   @media screen and (max-width: 330px){
-    .carousel img{
-      width: 355px;
-      width: 300px;
-      height: 20rem;
-    }
 
     #left {
       display: none !important;
@@ -134,18 +129,6 @@
   }
 
   @media screen and (min-width: 329px) and (max-width: 376px){
-  .carousel img{
-    width: 350px;
-    height: 20rem;
-  }
-
-  #left {
-    display: none !important;
-  }
-   
-  #right {
-    display: none !important;
-  }
 
   #profile{
     height: 100vh;
@@ -193,10 +176,6 @@
     width:350px;
   }
 
-  .carousel img{
-    width: 350px;
-    height: 20rem;
-  }
 
   .dark-mode-toggle-btn{
     margin-left: -11rem;
@@ -225,11 +204,6 @@
 }
 
 @media screen and (min-width: 376px) and (max-width: 400px){
-  .carousel img{
-    width: 350px;
-    height: 20rem;
-  }
-
   #left {
     display: none !important;
   }
@@ -296,11 +270,6 @@
 }
 
 @media screen and (min-width: 400px) and (max-width: 440px){
-  .carousel img{
-    width: 380px;
-    height: 20rem;
-  }
-
   #left {
     display: none !important;
   }
@@ -367,10 +336,6 @@
 }
 
 @media screen and (min-width: 440px) and (max-width:600px){
-  .carousel img{
-    width: 370px;
-    height: 350px;
-  }
 
   .wrapper{
     margin:auto;
@@ -445,11 +410,6 @@
     margin-bottom: 20vh;
   }
 
-  .carousel img{
-    width: 500px;
-    height: 450px;
-  }
-
   .wrapper{
     margin:auto;
     flex-wrap: wrap;
@@ -459,9 +419,6 @@
     width: 500px;
   }
 
-  .wrapper i{
-    top: 55%;
-  }
 
   #photos{
     height: 100vh;
@@ -478,11 +435,6 @@
     margin-bottom: 10rem;
   }
 
-  .carousel img{
-    width: 500px;
-    height: 450px;
-  }
-
   .wrapper{
     margin:auto;
     flex-wrap: wrap;
@@ -492,9 +444,6 @@
     width: 500px;
   }
 
-  .wrapper i{
-    top: 55%;
-  }
 }
 
 @media screen and (min-width: 750px) and (max-width:920px){
@@ -504,10 +453,6 @@
     margin-bottom: 2rem;
   }
   
-  .carousel img{
-    width: 600px;
-    height: 500px;
-  }
 
   .wrapper{
     margin:auto;
@@ -518,9 +463,6 @@
     width: 600px;
   }
 
-  .wrapper i{
-    top: 55%;
-  }
 
   .cat-sticker{
     height: 450px;
@@ -535,20 +477,11 @@
 }
 
 @media screen and (min-width: 920px) and (max-width: 1500px){
-  .carousel img{
-    width: 700px;
-    height: 500px;
-  }
-
   .wrapper{
     margin:auto;
     flex-wrap: wrap;
     margin-top: 2rem;
-    width: 700px;
-  }
-
-  .wrapper i{
-    top: 70%;
+    width: 1100px;
   }
 
   #contact{
@@ -627,11 +560,6 @@
   #about{
     height: 100vh;
     margin-top: 15rem;
-  }
-
-  .carousel img{
-    width: 900px;
-    height: 600px;
   }
 
   .wrapper{

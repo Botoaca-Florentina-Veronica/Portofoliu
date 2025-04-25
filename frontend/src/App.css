@@ -132,7 +132,6 @@ nav {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-/* Dark Mode Toggle Button */
 .dark-mode-toggle-btn {
   background: none;
   border: none;
@@ -286,7 +285,8 @@ article {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
+  margin-top: 14rem;
 }
 
 .contact-info{
@@ -313,6 +313,7 @@ article {
 .contact-info-container p {
   font-size: larger;
 }
+
 
 /* ==================== */
 /* === ICON STYLES === */
@@ -370,57 +371,6 @@ article .checkmark-icon {
 }
 
 /* ==================== */
-/* === CAROUSEL STYLES === */
-/* ==================== */
-.wrapper {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  gap: 14px;
-  padding: 20px 0;
-}
-
-.carousel-image {
-  scroll-snap-align: start;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1;
-  font-size: 1.5rem;
-}
-
-#left {
-  left: 10px;
-}
-
-#right {
-  right: 10px;
-}
-
-/* ==================== */
 /* === STICKER STYLES === */
 /* ==================== */
 .cat-sticker {
@@ -433,18 +383,15 @@ article .checkmark-icon {
   width: 400px;
 }
 
-
 /* ==================== */
 /* === DARK MODE STYLES === */
 /* ==================== */
-/* Root dark mode class */
 .dark-mode,
 .dark-mode p {
   background-color:#2d2d2d;
   color: antiquewhite;
 }
 
-/* Header */
 .dark-mode .navbar {
   background-color: #2d2d2d;
 }
@@ -458,7 +405,6 @@ article .checkmark-icon {
   text-decoration-color: antiquewhite;
 }
 
-/* Profile Section */
 .dark-mode #profile {
   background-color: #2d2d2d;
 }
@@ -469,12 +415,10 @@ article .checkmark-icon {
   color: antiquewhite;
 }
 
-/* About Section */
 .dark-mode #about {
   background-color: #2d2d2d;
 }
 
-/* Experience Section */
 .dark-mode #experience {
   background-color: #2d2d2d;
 }
@@ -483,7 +427,6 @@ article .checkmark-icon {
   color: antiquewhite;
 }
 
-/* Contact Section */
 .dark-mode #contact {
   background-color: #2d2d2d;
 }
@@ -493,17 +436,15 @@ article .checkmark-icon {
   border-color: #3f3f3f;
 }
 
-/* Containers */
 .dark-mode .details-container {
   background-color: #2d2d2d;
   border-color: #3f3f3f;
 }
 
-/* Buttons */
 .dark-mode .btn-color-1 {
   background-color: antiquewhite;
   color: #2d2d2d;
-  border-color: #503f25;
+  border-color: #503f25; 
 }
 
 .dark-mode .btn-color-2 {
@@ -521,7 +462,102 @@ article .checkmark-icon {
   color: #1a1a1a;
 }
 
-/* Icons */
 .dark-mode .icon {
   filter: brightness(0) invert(0.8);
+}
+
+.dark-mode .masonry-item {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* ==================== */
+/* === ANIMATIONS === */
+/* ==================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.masonry-item {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.masonry-item:nth-child(1) { animation-delay: 0.1s; }
+.masonry-item:nth-child(2) { animation-delay: 0.2s; }
+.masonry-item:nth-child(3) { animation-delay: 0.3s; }
+/* Continue adding delays as needed */
+
+
+
+
+/* ================================= */
+/* === GALERIE FOTO ( CONTENT ) === */
+/* =============================== */
+#photo-gallery {
+  min-height: 100vh;
+}
+
+.photo-grid {
+  display: flex;
+  margin-left: -15px;
+  width: auto;
+}
+
+.photo-grid-column {
+  padding-left: 15px;
+  background-clip: padding-box;
+}
+
+.photo-item {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  #photo-gallery {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #photo-gallery h1 {
+    font-size: 2.2rem;
+  }
+  
+  .photo-grid {
+    margin-left: -10px;
+  }
+  
+  .photo-grid-column {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #photo-gallery {
+    padding: 2rem 1rem;
+  }
+  
+  #photo-gallery h1 {
+    font-size: 1.8rem;
+  }
+  
+  .photo-item {
+    margin-bottom: 15px;
+  }
 }
