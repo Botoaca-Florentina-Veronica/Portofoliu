@@ -39,8 +39,8 @@ const Experience = ({ darkMode }) => {
               <article>
                 <img src={checkmark} alt="checkmark logo" className="checkmark-icon" />
                 <div>
-                  <h3>BootStrap</h3>
-                  <p>Begginer</p>
+                  <h3>ReactJS</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
             </div>

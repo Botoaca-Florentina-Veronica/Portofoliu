@@ -30,8 +30,8 @@ const Content = ({ darkMode }) => {
     { src: timisoara, alt: "Timișoara" },
     { src: bazooka2, alt: "Bazooka 2" },
     { src: croatia, alt: "Croatia" },
-    { src: teatru, alt: "Teatru" },
     { src: catedrala, alt: "Catedrala" },
+    { src: teatru, alt: "Teatru" },
     { src: ski, alt: "Ski" },
     { src: pasare, alt: "Pasăre" }
   ];

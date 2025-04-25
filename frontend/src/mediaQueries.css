@@ -10,11 +10,6 @@
     .about-containers {
       flex-wrap: wrap;
     }
-
-    .navbar-brand{
-      margin-left: 0;
-    }
-  
   }
   
     /* HAMBURGER MENU */
@@ -23,10 +18,6 @@
         display: none;
       }
 
-      .navbar-brand{
-        margin-left: 0;
-      }
-    
       .collapse.show .navbar-nav{
         display: flex;
         flex-direction: column;
@@ -207,6 +198,30 @@
     height: 20rem;
   }
 
+  .dark-mode-toggle-btn{
+    margin-left: -11rem;
+    margin-right: -5rem;
+  }
+
+  .navbar-brand {
+    width: 90px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .navbar{
+    width: 300px;
+  }
+
+  .container{
+    width: 320px;
+    margin-left: -1rem;
+  }
+
+  .dark-mode-toggle-btn{
+    margin-left: -6rem;
+  }
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 400px){
@@ -267,6 +282,16 @@
     height: 380px;
     margin-left: -5vh;
     margin-bottom: 5vh;
+  }
+
+  .navbar-brand {
+    margin-left: 2rem;
+    margin-right: 10rem;
+  }
+
+  .container{
+    width: 30rem;
+    margin-left: -1rem;
   }
 }
 
@@ -329,6 +354,16 @@
     width:430px;
     height:400px;
   }
+
+  .navbar-brand {
+    margin-left: 2rem;
+    margin-right: 10rem;
+  }
+
+  .container{
+    width: 30rem;
+    margin-left: -1rem;
+  }
 }
 
 @media screen and (min-width: 440px) and (max-width:600px){
@@ -363,10 +398,6 @@
 }
 
 @media screen and (max-width:600px){
-  .navbar-brand{
-    margin-left: 0;
-  }
-
   .upt{
     width:320px;
     height: 290px;
