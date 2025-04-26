@@ -496,6 +496,7 @@ article .checkmark-icon {
 /* =============================== */
 #photo-gallery {
   min-height: 100vh;
+  padding: 2rem;
 }
 
 .photo-grid {
@@ -527,18 +528,8 @@ article .checkmark-icon {
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-  #photo-gallery {
-    padding: 3rem 1.5rem;
-  }
-}
-
+/* Eliminați sau modificați media queries pentru a preveni afișarea pe o singură coloană */
 @media (max-width: 768px) {
-  #photo-gallery h1 {
-    font-size: 2.2rem;
-  }
-  
   .photo-grid {
     margin-left: -10px;
   }
@@ -546,17 +537,7 @@ article .checkmark-icon {
   .photo-grid-column {
     padding-left: 10px;
   }
-}
 
-@media (max-width: 480px) {
-  #photo-gallery {
-    padding: 2rem 1rem;
-  }
-  
-  #photo-gallery h1 {
-    font-size: 1.8rem;
-  }
-  
   .photo-item {
     margin-bottom: 15px;
   }

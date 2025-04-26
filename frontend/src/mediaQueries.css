@@ -201,6 +201,15 @@
     margin-left: -6rem;
   }
 
+  .photo-item{
+    margin-bottom: 3px !important; 
+    padding-left: 2px !important;
+  }
+
+  #photo-gallery{
+    padding: 4rem 0rem !important;
+  }
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 400px){
@@ -267,15 +276,18 @@
     width: 30rem;
     margin-left: -1rem;
   }
+
+  .photo-item{
+    margin-bottom: 3px !important; 
+    padding-left: 2px !important;
+  }
+
+  #photo-gallery{
+    padding: 4rem 0rem !important;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 440px){
-  #left {
-    display: none !important;
-  }
-  #right {
-      display: none !important;
-  }
 
   .wrapper{
     flex-wrap: wrap;
@@ -332,6 +344,15 @@
   .container{
     width: 30rem;
     margin-left: -1rem;
+  }
+
+  .photo-item{
+    margin-bottom: 3px !important; 
+    padding-left: 2px !important;
+  }
+
+  #photo-gallery{
+    padding: 4rem 0rem !important;
   }
 }
 
