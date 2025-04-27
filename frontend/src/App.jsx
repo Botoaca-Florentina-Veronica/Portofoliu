@@ -6,6 +6,7 @@ import EducationSection from './components/EducationSection'
 import Experience from './components/Experience'
 import Content from './components/Content'
 import Footer from './components/Footer'
+import LoadingOverlay from './components/LoadingOverlay';
 import './mediaQueries.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
+      <LoadingOverlay />
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <ProfileSection darkMode={darkMode} />
       <EducationSection darkMode={darkMode} />
