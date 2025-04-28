@@ -52,36 +52,33 @@ const PhotoGallery = ({ images, darkMode }) => {
 
   // Adăugare/ștergere event listener pentru taste
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
+    if (lightboxOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [handleKeyDown]);
+  }, [lightboxOpen, handleKeyDown]);
 
-  // Drag & drop pentru desktop
-  const handleMouseDown = (e) => {
-    if (window.innerWidth <= 768) return;
-    setDragStartX(e.clientX);
-    setIsDragging(true);
-  };
+  // Handler pentru touch events pe mobil
+  const handleTouchStart = useCallback((e) => {
+    setDragStartX(e.touches[0].clientX);
+  }, []);
 
-  const handleMouseMove = (e) => {
-    if (!isDragging || !lightboxOpen || window.innerWidth <= 768) return;
+  const handleTouchMove = useCallback((e) => {
+    if (!lightboxOpen) return;
+    const touchX = e.touches[0].clientX;
+    const deltaX = touchX - dragStartX;
     
-    const deltaX = e.clientX - dragStartX;
     if (Math.abs(deltaX) > 50) {
-      setIsDragging(false);
       if (deltaX > 0) {
         goToPrev();
       } else {
         goToNext();
       }
+      setDragStartX(touchX);
     }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  }, [lightboxOpen, dragStartX, goToPrev, goToNext]);
 
   // Configurație Masonry
   const masonryBreakpoints = {
@@ -89,10 +86,9 @@ const PhotoGallery = ({ images, darkMode }) => {
     1100: 3,
     700: 2,
   };
-  
+
   return (
     <>
-      {/* Grid-ul Masonry cu imagini */}
       <Masonry
         breakpointCols={masonryBreakpoints}
         className="photo-grid"
@@ -133,7 +129,6 @@ const PhotoGallery = ({ images, darkMode }) => {
         ))}
       </Masonry>
 
-      {/* Lightbox */}
       {lightboxOpen && (
         <div 
           style={{
@@ -147,18 +142,13 @@ const PhotoGallery = ({ images, darkMode }) => {
             justifyContent: 'center',
             alignItems: 'center',
             zIndex: 10000,
-            opacity: lightboxOpen ? 1 : 0,
-            pointerEvents: lightboxOpen ? 'all' : 'none',
-            transition: 'opacity 0.3s ease',
             cursor: isDragging ? 'grabbing' : 'default'
           }}
           onClick={closeLightbox}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
         >
-          {/* Buton închidere */}
+          {/* Butoanele de navigare rămân aceleași */}
           <button 
             style={{
               position: 'absolute',
@@ -180,7 +170,6 @@ const PhotoGallery = ({ images, darkMode }) => {
             &times;
           </button>
           
-          {/* Navigare între imagini */}
           <div style={{
             position: 'absolute',
             width: '100%',
@@ -225,7 +214,6 @@ const PhotoGallery = ({ images, darkMode }) => {
             </button>
           </div>
           
-          {/* Imaginea curentă */}
           <img 
             src={images[currentImageIndex].src} 
             alt={images[currentImageIndex].alt} 
@@ -233,9 +221,6 @@ const PhotoGallery = ({ images, darkMode }) => {
               maxWidth: '90%',
               maxHeight: '90%',
               objectFit: 'contain',
-              transform: lightboxOpen ? 'scale(1)' : 'scale(0.9)',
-              transition: transitioning ? 'opacity 0.3s ease' : 'transform 0.3s ease, opacity 0.3s ease',
-              opacity: transitioning ? 0.7 : 1,
               userSelect: 'none'
             }}
             onClick={(e) => e.stopPropagation()}
