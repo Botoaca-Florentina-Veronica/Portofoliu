@@ -17,7 +17,7 @@ const ProfileSection = ({ darkMode }) => {
         <div className="btn-container">
           <button 
             className={`btn btn-color-2 ${darkMode ? 'dark' : ''}`} 
-            onClick={() => window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:9c6e8c8a-654e-40bf-a547-48b7f3087e56')}
+            onClick={() => window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:be776879-c810-4840-ab91-46655130e2d5')}
           >
             Download CV
           </button>
