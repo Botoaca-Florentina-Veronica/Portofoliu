@@ -176,7 +176,7 @@ const PhotoGallery = ({ images, darkMode }) => {
             display: 'flex',
             justifyContent: 'space-between',
             padding: '0 20px',
-            boxSizing: 'border-box'
+            boxSizing: 'border-box' 
           }}>
             <button 
               style={{
