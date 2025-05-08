@@ -196,6 +196,17 @@ nav {
   gap: 1rem;
 }
 
+.paper-plane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+}
+
+
 /* ABOUT SECTION */
 #about {
   position: relative;
@@ -814,3 +825,5 @@ article .checkmark-icon {
     height: 25px;
   }
 }
+
+
