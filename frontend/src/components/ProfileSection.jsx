@@ -14,37 +14,31 @@ const ProfileSection = ({ darkMode }) => {
   const [pathData, setPathData] = useState('');
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  // Path ultra-smooth: doar curbe sinusoidale pe tot traseul
-  const generateLoopPath = () => {
-    const w = window.innerWidth + 45;
-    const startY = 200;
-    const points = [];
-    const totalPoints = 1000;
-    const waveCount = 2;
-    const amplitude = 60;
-    const fadeDistance = 0.05;
+const generateLoopPath = () => {
+  const w = window.innerWidth;
+  const margin = 50; // reducere la 50px ca avionul sa apara imediat in stanga dupa ce iese in dreapta
+  const startX = -margin;
+  const endX = w + margin;
+  const startY = 200;
+  const points = [];
+  const totalPoints = 1000;
+  const waveCount = 2;
+  const amplitude = 60;
 
-    for (let i = 0; i <= totalPoints; i++) {
-      const t = i / totalPoints;
-      const x = w * t - 100;
-      
-      let fadeMultiplier = 1;
-      if (t < fadeDistance) {
-        fadeMultiplier = t / fadeDistance;
-      } else if (t > (1 - fadeDistance)) {
-        fadeMultiplier = (1 - t) / fadeDistance;
-      }
-      
-      const y = startY + Math.sin(t * Math.PI * 2 * waveCount) * amplitude * fadeMultiplier;
-      points.push([x, y]);
-    }
+  for (let i = 0; i <= totalPoints; i++) {
+    const t = i / totalPoints;
+    const x = startX + (endX - startX) * t;
+    const y = startY + Math.sin(t * Math.PI * 2 * waveCount) * amplitude;
+    points.push([x, y]);
+  }
 
-    let path = `M${points[0][0]},${points[0][1]}`;
-    for (let i = 1; i < points.length; i++) {
-      path += ` L${points[i][0]},${points[i][1]}`;
-    }
-    return path;
-  };
+  let path = `M${points[0][0]},${points[0][1]}`;
+  for (let i = 1; i < points.length; i++) {
+    path += ` L${points[i][0]},${points[i][1]}`;
+  }
+  return path;
+};
+
 
   useLayoutEffect(() => {
     const updatePath = () => {
@@ -60,10 +54,10 @@ const ProfileSection = ({ darkMode }) => {
   useLayoutEffect(() => {
     if (!pathData || !planeRef.current || !pathRef.current) return;
 
-    gsap.set(planeRef.current, { 
+    gsap.set(planeRef.current, {
       opacity: 1,
       xPercent: -50,
-      yPercent: -50 
+      yPercent: -50,
     });
 
     const tween = gsap.to(planeRef.current, {
@@ -73,23 +67,11 @@ const ProfileSection = ({ darkMode }) => {
       motionPath: {
         path: pathRef.current,
         align: pathRef.current,
-        autoRotate: [true, 120, true],
+        autoRotate: true,
         alignOrigin: [0.5, 0.5],
-        curviness: 1.5,
-        normalize: true,
-        type: 'cubic',
-        resolution: 1000
       },
-      rotation: -45,
-      modifiers: {
-        rotation: function(rotation, target) {
-          const progress = gsap.getProperty(target, "motionPath:progress");
-          const wavePosition = Math.sin(progress * Math.PI * 2 * 3);
-          const waveVelocity = Math.cos(progress * Math.PI * 2 * 3);
-          return rotation + (wavePosition * 30) + (waveVelocity * 45);
-        }
-      }
     });
+
     return () => tween.kill();
   }, [pathData]);
 
@@ -99,9 +81,15 @@ const ProfileSection = ({ darkMode }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+   useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = '';
+    };
+  }, []);
+
   return (
     <section id="profile" className={darkMode ? 'dark-mode' : ''} style={{ position: 'relative' }}>
-      {/* SVG ascuns folosit doar pentru traiectorie */}
       <svg
         style={{
           display: isMobile ? 'none' : undefined,
@@ -124,7 +112,6 @@ const ProfileSection = ({ darkMode }) => {
         />
       </svg>
 
-      {/* Container pentru animația Lottie */}
       <div
         ref={planeRef}
         style={{
@@ -132,12 +119,12 @@ const ProfileSection = ({ darkMode }) => {
           position: 'absolute',
           width: '150px',
           height: '150px',
-          opacity: 0,
+          opacity: 1,
           zIndex: 15,
           pointerEvents: 'none',
           transformOrigin: 'center center',
           marginLeft: '-75px',
-          marginTop: '-75px'
+          marginTop: '-75px',
         }}
       >
         <dotlottie-player
@@ -156,7 +143,6 @@ const ProfileSection = ({ darkMode }) => {
         />
       </div>
 
-      {/* Conținutul principal */}
       <div>
         <img className="pic-container" src={profilePic} alt="Vera-profile pic" />
       </div>
