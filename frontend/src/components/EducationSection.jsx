@@ -30,7 +30,7 @@ const EducationSection = ({ darkMode }) => {
             </div>
           </div>
           <div className="text"> 
-            <p>Who I Am?
+            <p>Who am I?
 
               A curious mind with a camera in one hand and a mouse in the other — I thrive where creativity meets logic. By day, I’m working to become a full-stack developer; by night, an artist painting worlds, tinkering with watch mechanisms, or bringing drawings to life through animation.
               Learning isn’t confined to lectures for me — I dive into web development with relentless curiosity, building projects, dissecting tutorials, and turning theory into practice. When I’m not debugging code, I’m breaking down physics concepts for high school students, sharing the same excitement that once hooked me on the subject.
