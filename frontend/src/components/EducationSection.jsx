@@ -30,11 +30,13 @@ const EducationSection = ({ darkMode }) => {
             </div>
           </div>
           <div className="text"> 
-            <p>I am a passionate amateur photographer, artist and computer science student with a keen interest in expanding my knowledge beyond the classroom. 
-              Driven by curiosity and ambition, I am committed to mastering web development independently. 
-              My dedication to learning is proven in my proactive approach, seeking out online resources, tutorials, and projects to enhance
-               my skills. I balance my academic responsibilities with personal projects, constantly challenging myself to grow and innovate. 
-               With a blend of theoretical knowledge and practical experience, I am on a path to becoming a well-rounded and proficient developer.</p>
+            <p>Who I Am?
+
+              A curious mind with a camera in one hand and a mouse in the other — I thrive where creativity meets logic. By day, I’m working to become a full-stack developer; by night, an artist painting worlds, tinkering with watch mechanisms, or bringing drawings to life through animation.
+              Learning isn’t confined to lectures for me — I dive into web development with relentless curiosity, building projects, dissecting tutorials, and turning theory into practice. When I’m not debugging code, I’m breaking down physics concepts for high school students, sharing the same excitement that once hooked me on the subject.
+              Every hobby — whether assembling watches, wielding a paintbrush, or animating frame by frame — fuels my obsession with precision and storytelling. I don’t just study technology; I play with it, break it, and rebuild it better. My goal? To craft solutions as inventive as they are functional, one line of code (or stroke of color) at a time.
+
+            </p>
           </div>
         </div>
       </div>
